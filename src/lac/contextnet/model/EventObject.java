@@ -5,25 +5,25 @@ import java.io.Serializable;
 public class EventObject implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private String m_name;
-	private String m_context;
+	private String name;
+	private String context;
 	
-	public EventObject(String name, String context)
+	public EventObject(String n, String c)
 	{
-		m_name = name;
-		m_context = context;
+		name = n;
+		context = c;
 	}
 	
 	public String toString()
 	{
-		return m_name + " (" + m_context + ")";
+		return name + " (" + context + ")";
 	}
 
 	public String getName() {
-		return m_name;
+		return name;
 	}
 	
 	public String getContext() {
-		return m_context;
+		return context;
 	}
 }
